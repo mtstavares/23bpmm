@@ -336,11 +336,19 @@ hr{
     .mr{
         margin-right: 3rem;
     }
+
+    .img-carousel{
+        height: 600px;
+    }
 }
 
 @media(max-width: 830px){
     #logotipo{
         display: none;
+    }
+
+    .img-carousel{
+        height: 650px;
     }
 
 }
@@ -359,6 +367,14 @@ hr{
         flex-direction: column;
         height: 300px;
     } 
+
+    #container-footer h6{
+        margin-top: 30px;
+    }
+
+    .img-carousel{
+        height: 600px;
+    }
 }
 
 @media (max-width: 600px){
@@ -368,14 +384,22 @@ hr{
         letter-spacing: 15px;
     }
 
+    .img-carousel{
+        height: 500px;
+    }
+
     #escrito{
-        display: non;
+        display: none;
     }
 }
 
 @media (max-width: 450px) {
     #container-companhias{
         height: 900px;
+    }
+
+    .img-carousel{
+        height: 450px;
     }
     
 }
