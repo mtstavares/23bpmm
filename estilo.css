@@ -384,6 +384,10 @@ hr{
         letter-spacing: 15px;
     }
 
+    #escrito{
+        display: none;
+    }
+
     .img-carousel{
         height: 500px;
     }
