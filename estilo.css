@@ -375,6 +375,12 @@ hr{
     .img-carousel{
         height: 600px;
     }
+
+    #container-divisao h1{
+        font-weight: 900;
+        font-size: 45px;
+        letter-spacing: 15px;
+    }
 }
 
 @media (max-width: 600px){
@@ -382,6 +388,10 @@ hr{
         font-weight: 900;
         font-size: 40px;
         letter-spacing: 15px;
+    }
+
+    #container-footer-social h5{
+        margin-top: 15px;
     }
 
     #escrito{
