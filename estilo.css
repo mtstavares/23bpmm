@@ -111,7 +111,10 @@
     color: #fff;
 }
 
-
+.navbar a{
+    text-transform: uppercase;
+    font-size: 14px;
+}
 
 
 /*Carrousel*/
@@ -212,10 +215,11 @@
 #container-footer{
     background-color: var(--fundo);
     width: 100%;
-    height: 250px;
+    height: 260px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
 }
 
 #container-footer-social{
@@ -302,8 +306,8 @@ footer .fa {
 #rodape p{
     font-family: 'Times New Roman';
     font-style: italic;
-    font-size: 13px;
-    letter-spacing: 1px;
+    font-size: 11px;
+    letter-spacing: 2px;
     
 }
 
@@ -323,6 +327,313 @@ hr{
 }
 
 
+/*Section historico*/
+
+#container-historico{
+    width: 80%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#imagem-historico{
+    position: relative;
+    opacity: 0.6;
+}
+
+#imagem-historico img{
+    opacity: 0.2;
+}
+
+
+#texto-historico{
+    position: absolute;
+    
+}
+
+#texto-historico p{
+    color: black;
+    font-size: 13px;
+}
+
+#texto-historico{
+    text-transform: uppercase;
+}
+
+
+/*accordion*/
+
+.accordion{
+    margin: 40px 0;
+  }
+
+.accordion .item {
+    border: none;
+    margin-bottom: 50px;
+    background-color: #3233320e;
+}
+
+.imagem-accordion{
+    width: 170px;
+    height: 170px;
+    position: relative;
+    display: inline;
+    float: left;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.t-p{
+    color: black;
+    padding: 40px 30px 0px 30px;
+  }
+
+.accordion .item .item-header h2 button.btn.btn-link {
+    background: #333435;
+    color: white;
+    border-radius: 0px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.5;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+  .accordion .item .item-header {
+      border-bottom: none;
+      background: transparent;
+      padding: 0px;
+      margin: 2px;
+  }
+  
+  .accordion .item .item-header h2 button {
+      color: white;
+      font-size: 20px;
+      padding: 15px;
+      display: block;
+      width: 100%;
+      text-align: left;
+  }
+  
+  .accordion .item .item-header h2 i {
+      float: right;
+      font-size: 30px;
+      color: #fff;
+      background-color: black;
+      width: 60px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+  }
+  
+  button.btn.btn-link.collapsed i {
+      transform: rotate(0deg);
+  }
+  
+  button.btn.btn-link i {
+      transform: rotate(180deg);
+      transition: 0.5s;
+  }
+  
+
+  /*Brasão das armas*/
+
+#container-brasao{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #3233320e;
+    
+}
+
+
+#container-brasao p{
+    color: #000;
+    font-size: 13px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    background: url(imagens/23bpmm\ -\ opaco.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+}
+
+#container-brasao h1{
+    text-transform: uppercase;
+    font-family: 'Poppins'; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.autor{
+    float: right;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+/*Localização*/
+
+#container-localizacao{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+   
+}
+
+#container-localizacao iframe{
+    border-radius: 20px;
+}
+
+
+#container-localizacao h1{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: #000;
+    margin-left: 40px;
+    text-align: center;
+}
+
+#container-localizacao p{
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    color: #000;
+    margin-left: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#container-localizacao h1{
+    margin-bottom: 30px;
+}
+
+
+/*Galeria de heróis*/
+#container-herois{
+    width: 85%;
+    margin: 0 auto;    
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+#container-herois div:last-child{
+    margin-left: 50px;
+}
+
+#container-herois h3{
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 80px;
+}
+
+
+#container-herois p{
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    
+}
+
+#container-herois mark{
+    float: right;
+    margin-right: 40px;
+}
+
+/*Curriculo do Comandante*/
+
+#container-curriculo{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    padding: 30px 0;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+
+.div-esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28%;
+}
+
+.div-direita{
+    margin-left: 30px;
+    display: flex;
+    font-family: 'Poppins';
+}
+
+
+.informacoes1, .informacoes2{
+    text-align: left;
+}
+
+.informacoes1{
+    width: 50%;
+    margin-right: 60px;
+    margin-left: 30px;
+}
+
+.informacoes2{
+    width: 50%;
+}
+
+#container-curriculo h5{
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 50px;
+}
+
+#container-curriculo h4{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#container-curriculo h1{
+    color: #000;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.foto-cmd{
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+}
+
+.insignia{
+    width: 10rem;
+    margin: 0 auto;
+}
+
+#container-curriculo p{
+    color: black;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+
+
+
+
+
 
 /*Mobile*/
 
@@ -340,6 +651,40 @@ hr{
     .img-carousel{
         height: 600px;
     }
+}
+
+@media(max-width: 950px){
+    #container-localizacao{
+        flex-direction: column;
+    }
+
+    #container-localizacao iframe{
+        margin-bottom: 30px;
+        width: 700px;
+    }
+
+    #container-localizacao h1{
+        margin-left: 0;
+    }
+
+    #container-localizacao p{
+        margin-left: 0;
+    }
+
+    #container-herois{
+        flex-direction: column;
+    }
+
+    #container-herois div:last-child{
+        margin-left: 0;
+    }
+
+    #container-herois h3{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
 }
 
 @media(max-width: 830px){
@@ -372,6 +717,11 @@ hr{
         margin-top: 30px;
     }
 
+    #container-footer h5{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
     .img-carousel{
         height: 600px;
     }
@@ -381,6 +731,42 @@ hr{
         font-size: 45px;
         letter-spacing: 15px;
     }
+
+    #container-localizacao iframe{
+        margin-bottom: 30px;
+        width: 550px;
+    }
+
+    #container-curriculo{
+        flex-direction: column;
+    }
+
+    #container-curriculo p{
+        font-size: 17px;
+    }
+
+    .div-direita{
+        margin: 0 auto;
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .div-esquerda{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .informacoes1{
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .informacoes2{
+        padding: 0 10px;
+        margin: 0;
+    }
+
+   
 }
 
 @media (max-width: 600px){
@@ -390,8 +776,16 @@ hr{
         letter-spacing: 15px;
     }
 
+    #rodape hr{
+        margin-top: 40px;
+    }
+
+    #container-footer{
+        padding-top: 70px;
+    }
+ 
     #container-footer-social h5{
-        margin-top: 15px;
+        margin-top: 10px;
     }
 
     #escrito{
@@ -407,6 +801,55 @@ hr{
     }
 }
 
+@media(max-width:565px){
+   
+
+    #container-footer-social p{
+        margin-bottom: 20px;
+    }
+
+    #container-localizacao iframe{
+        margin-bottom: 30px;
+        width: 450px;
+    }
+
+    #container-herois img{
+        width: 400px;
+    }
+
+    .div-direita{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    #container-curriculo h5{
+        margin: 0;
+        text-align: center;
+    }
+
+    .informacoes1{
+        width: 100%;
+    }
+
+    .informacoes2{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 470px){
+    #container-footer{
+        padding-top: 70px;
+    }
+
+    #container-localizacao iframe{
+        width: 300px;
+    }
+}
+
 @media (max-width: 450px) {
     #container-companhias{
         height: 900px;
@@ -415,5 +858,19 @@ hr{
     .img-carousel{
         height: 450px;
     }
-    
+
+   
 }
+
+@media (max-width: 400px){
+    #container-divisao h1{
+        font-weight: 900;
+        font-size: 30px;
+        letter-spacing: 15px;
+    }
+
+    #container-herois img{
+        width: 350px;
+    }
+}
+
