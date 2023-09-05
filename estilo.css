@@ -5,8 +5,9 @@
     --secundaria: #5d5d5d
 }
 
-*{
-    font-family: "Poppins";
+
+* {
+    font-family: "Poppins", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,12 +27,15 @@
     height: 250px;
 }
 
-#brasao-btl img{
+#brasao-btl img {
     width: 8em;
-    height: 13;
+    height: 13em; /* Adicionei 'em' como unidade */
     transition: 0.6s;
-    filter: drop-shadow(0px 0px 10px rgba(0 0 0 / 50%));
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)); /* Corrigi a sintaxe rgba */
+    margin-left: 100px;
 }
+
+
 
 #brasao-btl img:hover{
     -webkit-transform: scale(1.1);
@@ -42,8 +46,8 @@
 }
 
 #logotipo img{
-    width: 15em;
-    height: 10em; 
+    width: 21em;
+    height: 9em; 
 }
 
 .image-shadow{
@@ -52,6 +56,7 @@
 
 #escrito{
     text-align: center;
+    margin-left: 120px;
 }
 
 #escrito h1{
@@ -750,9 +755,20 @@ hr{
         height: 600px;
     }
 
+    #container-1cia{
+        width: 98%;
+    }
+
 }
 
+
+
 @media(max-width: 950px){
+
+    #logotipo{
+        display: none;
+    }
+
     #container-localizacao{
         flex-direction: column;
     }
@@ -794,8 +810,6 @@ hr{
         border: none;
     }
 
-
-
     #container-aside div:first-of-type{
         width: 30%;
     }
@@ -819,6 +833,27 @@ hr{
         padding: 20px;
     }
 
+    #container-1cia{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #container-1cia img{
+        width: 90%;
+    }
+
+    .imagem-cmt{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #container-1cia h1{
+        margin-left: 0;
+    }
+
 }
 
 @media(max-width: 830px){
@@ -828,6 +863,15 @@ hr{
 
     .img-carousel{
         height: 650px;
+    }
+
+    #brasao-btl img{
+        margin-left: 80px;
+    }
+
+    #capa{
+        display: flex;
+        justify-content: space-around;
     }
 
 }
@@ -905,6 +949,7 @@ hr{
 
 @media (max-width: 600px){
     #container-divisao h1{
+
         font-weight: 900;
         font-size: 40px;
         letter-spacing: 15px;
@@ -933,6 +978,27 @@ hr{
     #escrito{
         display: none;
     }
+
+    #brasao-btl img{
+        margin: 0;
+    }
+
+    #container-aside{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #container-aside div:first-of-type{
+        width: 70%;
+    }
+
+    #container-aside div:last-of-type{
+        width: 100%;
+        text-align: center;
+        
+    }
+
+
 }
 
 @media(max-width:565px){
@@ -964,13 +1030,15 @@ hr{
         text-align: center;
     }
 
-    .informacoes1{
-        width: 100%;
+    .informacoes1,
+    .informacoes2 {
+        width: 100%; /* Definido para 100% */
     }
 
-    .informacoes2{
-        width: 100%;
+    .imagem-cmt{
+        width: 90%;
     }
+
 
 }
 
@@ -990,7 +1058,6 @@ hr{
         text-align: center;
         
     }
-
 
 }
 
@@ -1013,6 +1080,10 @@ hr{
         height: 450px;
     }
 
+    .imagem-cmt{
+        width: 100%;
+    }
+
    
 }
 
@@ -1025,6 +1096,20 @@ hr{
 
     #container-herois img{
         width: 350px;
+    }
+
+    .imagem-cmt{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #containercia1 img:last-of-type{
+        margin-right: 0px !important;
+        margin-bottom: 10px;
+    }
+
+    #container-1cia h1{
+        font-size: 25px;
     }
 }
 
