@@ -7,7 +7,7 @@
 
 
 * {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif , Helvetica;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -133,7 +133,7 @@
 
 
 #container-carousel{
-    width: 75%;
+    width: 70%;
     margin-top: 0;
     float: left;
 }
@@ -141,7 +141,9 @@
 #container-carousel a{
     text-decoration: none;
     color: var(--branco);
+
 }
+
 
 .leia-mais{
     text-transform: uppercase;
@@ -149,12 +151,18 @@
 }
 
 .img-carousel{
-    height: 620px;
+    height: 800px;
 }
 
 .fundo-opaco{
     background-color: black;
-    opacity: 0.6;
+    opacity: 0.7;
+}
+
+.carousel-caption{
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 
@@ -162,16 +170,16 @@
 
 #container-aside{
     float: right;
-    width: 25%;
-    height: 620px;
+    width: 30%;
+    height: 800px;
     text-align: center;
     overflow-y: auto;
     padding: 0 20px 0 15px;
-    border-left: 5px solid var(--fundo);
+
 }
 
 #container-aside img{
-    width: 50%;
+    width: 40%;
     height: 170px;
     border-radius: 50%;   
     border: 2px solid var(--fundo);
@@ -190,7 +198,6 @@
 #container-aside p{
     color: #000 !important;
     background-color: #00000008;
-    text-transform: lowercase;
     
 }
 
@@ -294,7 +301,9 @@
     height: 200px;
 }
 
-#container-footer h6, h5, p{
+#container-footer h6,
+#container-footer h5,
+#container-footer p{
     color: #fff !important;
     text-transform: uppercase;
 }
@@ -359,8 +368,9 @@ footer .fa {
 #rodape p{
     font-family: 'Times New Roman';
     font-style: italic;
-    font-size: 11px;
-    letter-spacing: 2px;
+    font-size: 17px;
+    letter-spacing: 3px;
+    color: #fff;
     
 }
 
@@ -509,7 +519,7 @@ hr{
 
 #container-brasao p{
     color: #000 !important;
-    font-size: 13px;
+    font-size: 20px;
     font-family: 'Poppins';
     font-weight: 300;
     background: url(imagens/23bpmm\ -\ opaco.png) no-repeat;
@@ -589,7 +599,7 @@ hr{
     font-weight: 400;
     letter-spacing: 4px;
     margin-bottom: 40px;
-    background-color: #00000017;
+    background-color: #0000000d;
 }
 
 
@@ -597,7 +607,7 @@ hr{
     color: #000 !important;
     text-transform: uppercase;
     font-family: 'Poppins';
-    background-color: #00000017;
+    background-color: #00000010;
     
 }
 
@@ -688,7 +698,7 @@ hr{
 
 
 
-/*Página 1 CIA*/
+/*Página CIAS*/
 
 #container-1cia{
     width: 80%;
@@ -715,6 +725,7 @@ hr{
 
 #container-1cia p{
     color: #000 !important;
+    font-size: 1.5em;
 }
 
 #container-1cia iframe{
@@ -736,6 +747,70 @@ hr{
 #containercia1 h3{
     text-transform: uppercase;
 }
+
+
+
+/*Destaques*/
+
+#container-destaques{
+    text-align: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    background-color: #ede6e623;
+}
+
+#container-ocorrencia{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+#ocorrencia-mes, #policial-mes{
+    width: 45%;
+    border: 3px solid var(--fundo);
+    border-radius: 20px;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+#container-destaques h1,
+#container-destaques h3{
+    text-transform: uppercase;
+}
+
+#container-destaques h1{
+    margin-bottom: 50px;
+    font-size: 3.5em;
+    font-weight: 500;
+    font-family: "Poppins";
+}
+
+#container-destaques h3{
+    font-weight: bolder;
+}
+
+
+#container-destaques mark{
+    font-size: 1.2em;
+}
+
+#mostrarMais{
+    color: blue;
+    cursor: pointer;
+}
+
+#ocorrencia-mes img{
+    margin: 40px 0 40px 0;
+}
+
+.linkOcorrencia{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
 
 
 /*Mobile*/
@@ -873,6 +948,23 @@ hr{
         display: flex;
         justify-content: space-around;
     }
+
+    #container-ocorrencia{
+        flex-direction: column;
+        align-items: center;
+        width: 98%;
+        margin: 0 auto;
+    }
+
+    #ocorrencia-mes,
+    #policial-mes{
+        width: 100%;
+        margin-bottom: 30px;
+    
+        
+    }
+
+
 
 }
 
