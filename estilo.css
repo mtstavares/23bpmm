@@ -7,7 +7,7 @@
 
 
 * {
-    font-family: "Poppins", sans-serif , Helvetica;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,9 +32,9 @@ body{
 
 #brasao-btl img {
     width: 8em;
-    height: 13em; /* Adicionei 'em' como unidade */
+    height: 13em;
     transition: 0.6s;
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)); /* Corrigi a sintaxe rgba */
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)); 
     margin-left: 100px;
 }
 
@@ -97,7 +97,11 @@ body{
 
 .navbar{
     background-color: var(--fundo);
-    width: 100%;
+    width: 98%;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
 }
 
 .mr{
@@ -126,8 +130,6 @@ body{
 .navbar a{
     text-transform: uppercase;
     font-size: 14px;
-    
-    
 }
 
 
@@ -136,9 +138,9 @@ body{
 
 
 #container-carousel{
-    width: 70%;
-    margin-top: 0;
-    float: left;
+    width: 75%;
+    margin: 0 auto;
+    
 }
 
 #container-carousel a{
@@ -146,68 +148,26 @@ body{
     color: var(--branco);
 
 }
-
-
 .leia-mais{
     text-transform: uppercase;
     font-weight: bold;
 }
 
 .img-carousel{
-    height: 650px;
+    height: auto;
+    object-fit: cover;
 }
 
 .fundo-opaco{
     background-color: black;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 .carousel-caption{
-    width: 60%;
-    margin: 0 auto;
+    width: 80%;
     padding: 10px;
+    border-radius: 10px;
 }
-
-
-/*Container Aside*/
-
-#container-aside{
-    float: right;
-    width: 30%;
-    height: 650px;
-    text-align: center;
-    overflow-y: auto;
-    padding: 0 20px 0 15px;
-    border-left: 2px solid var(--fundo);
-    
-
-}
-
-#container-aside img{
-    width: 40%;
-    height: 170px;
-    border-radius: 50%;   
-    border: 5px solid var(--fundo);
-}
-
-#container-aside h1{
-    padding: 10px 0;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-bottom: 2px solid #ddd;
-}
-
-#container-aside h3{
-    padding-top: 10px;
-    text-transform: uppercase;
-}
-
-#container-aside p{
-    color: #000 !important;
-    background-color: #00000008;
-    
-}
-
 
 /*Container meio*/
 
@@ -230,6 +190,172 @@ body{
     font-weight: 900;
     font-size: 60px;
     letter-spacing: 15px;
+}
+
+/* Policial do mes */
+
+#container-policial-mes {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom,#000 0%, #323332 20%, #000 130%);
+}
+
+#policial-mes {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+   
+}
+
+#policial-mes h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    color: white;
+}
+
+#container2 {
+    width: 98%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#conteudo {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    width: 8%;
+    height: 10.5em;
+    text-align: center;
+    background-color: white;
+    background-image: linear-gradient(to bottom, #323332, #000);
+    transition: 0.4s ease-in-out;
+}
+
+.card h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.card img {
+    width: 60%;
+    height: 50%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.card p {
+    padding: 5px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.card span {
+    font-weight: bold;
+    color: white;
+}
+
+.card.card:hover {
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+#imagem1,
+#imagem2,
+#sintese {
+    width: 33%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.glass img {
+    width: 40%;
+    height: 95%;
+}
+
+.glass {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.586);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.674);
+    backdrop-filter: blur(3.6px);
+    -webkit-backdrop-filter: blur(3.6px);
+    border: 1px solid rgba(255, 255, 255, 0.174);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#foto-policial img {
+    width: 100%;
+    
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.674);
+    border: 1px solid rgba(255, 255, 255, 0.174);
+}
+
+#sintese {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    
+}
+
+#sintese h3 {
+    font-size: 3em;
+}
+
+#sintese div {
+    width: 85%;
+    height: 85%;
+    border-radius: 15px;
+    background-color: white;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.leia-mais{
+    text-align: center;
+}
+
+#sintese-texto{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#sintese span{
+    display: block;
+    color: blue;
+    cursor: pointer;
+    margin-top: 5px;
+    
 }
 
 /*Companhias*/
@@ -436,6 +562,7 @@ hr{
 
 .accordion{
     margin: 40px 0;
+    
   }
 
 .accordion .item {
@@ -469,6 +596,7 @@ hr{
     line-height: 2.5;
     text-decoration: none;
     text-transform: uppercase;
+    border-radius: 10px;
 }
 
   .accordion .item .item-header {
@@ -773,8 +901,7 @@ hr{
 }
 
 
-#ocorrencia-mes, 
-#policial-mes{
+#ocorrencia-mes, #policial-mes-cia{
     width: 45%;
     border: 3px solid var(--fundo);
     border-radius: 20px;
@@ -810,14 +937,7 @@ hr{
 }
 
 #ocorrencia-mes img{
-    width: 85%;
-    margin-bottom: 25px;
-   
-   
-}
-
-#ocorrencia-mes p{
-    margin-bottom: 0;
+    margin: 40px 0 40px 0;
 }
 
 .linkOcorrencia{
@@ -830,6 +950,13 @@ hr{
 
 /*Mobile*/
 
+@media(max-width: 1570px){
+    .mr{
+        margin-right: 6rem;
+    }
+}
+
+
 @media(max-width: 1350px){
     .mr{
         margin-right: 5rem;
@@ -841,22 +968,39 @@ hr{
         margin-right: 3rem;
     }
 
-    .img-carousel{
-        height: 600px;
-    }
-
     #container-1cia{
         width: 98%;
     }
 
+    #imagem2{
+        display: none;
+    }
+
+    #imagem1{
+        width: 50%;
+    }
+
+    #sintese{
+        width: 50%;
+    }
 }
 
+
+@media(max-width: 1180px) {
+    .card h4{
+        font-size: 0.9rem;
+    }
+}
 
 
 @media(max-width: 950px){
 
     #logotipo{
         display: none;
+    }
+
+    #container-carousel{
+        width: 95%;
     }
 
     #container-localizacao{
@@ -889,9 +1033,6 @@ hr{
         text-align: center;
     }
 
-    #container-carousel{
-        width: 100%;
-    }
 
     #container-aside{
         width: 100%;
@@ -951,10 +1092,6 @@ hr{
         display: none;
     }
 
-    .img-carousel{
-        height: 650px;
-    }
-
     #brasao-btl img{
         margin-left: 80px;
     }
@@ -975,8 +1112,10 @@ hr{
     #policial-mes{
         width: 100%;
         margin-bottom: 30px;
-    
-        
+    }
+
+    #cards{
+        display: none;
     }
 
 
@@ -987,6 +1126,16 @@ hr{
     #container-companhias{
         flex-wrap: wrap;
         height: 500px;
+    }
+
+    #escrito h1,
+    #escrito h2,
+    #escrito h3{
+        display: none;
+    }
+
+    #brasao-btl{
+        margin: 0 auto;
     }
     
     .imagem-brasao{
@@ -1007,9 +1156,7 @@ hr{
         margin-bottom: 0;
     }
 
-    .img-carousel{
-        height: 600px;
-    }
+    
 
     #container-divisao h1{
         font-weight: 900;
@@ -1051,6 +1198,10 @@ hr{
         margin: 0;
     }
 
+    #policial-mes h1{
+        font-size: 2.4em;
+        margin: 5px 0 0 0;
+    }
    
 }
 
@@ -1078,9 +1229,7 @@ hr{
         display: none;
     }
 
-    .img-carousel{
-        height: 500px;
-    }
+    
 
     #escrito{
         display: none;
@@ -1104,6 +1253,28 @@ hr{
         text-align: center;
         
     }
+
+    #conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #imagem1{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    #sintese{
+        display: none;
+    }
+
+    #cards{
+        display: none;
+        
+    }
+
+
+
 
 
 }
@@ -1181,10 +1352,6 @@ hr{
 @media (max-width: 450px) {
     #container-companhias{
         height: 900px;
-    }
-
-    .img-carousel{
-        height: 450px;
     }
 
     .imagem-cmt{
