@@ -140,7 +140,6 @@ body{
 #container-carousel{
     width: 75%;
     margin: 0 auto;
-    
 }
 
 #container-carousel a{
@@ -154,7 +153,7 @@ body{
 }
 
 .img-carousel{
-    height: auto;
+    height: 900px;
     object-fit: cover;
 }
 
@@ -168,6 +167,10 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
+
+
+
+
 
 /*Container meio*/
 
@@ -968,6 +971,10 @@ hr{
         margin-right: 3rem;
     }
 
+    .img-carousel{
+        height: 600px;
+    }
+
     #container-1cia{
         width: 98%;
     }
@@ -997,10 +1004,6 @@ hr{
 
     #logotipo{
         display: none;
-    }
-
-    #container-carousel{
-        width: 95%;
     }
 
     #container-localizacao{
@@ -1033,6 +1036,9 @@ hr{
         text-align: center;
     }
 
+    #container-carousel{
+        width: 100%;
+    }
 
     #container-aside{
         width: 100%;
@@ -1090,6 +1096,10 @@ hr{
 @media(max-width: 830px){
     #logotipo{
         display: none;
+    }
+
+    .img-carousel{
+        height: 650px;
     }
 
     #brasao-btl img{
@@ -1156,7 +1166,9 @@ hr{
         margin-bottom: 0;
     }
 
-    
+    .img-carousel{
+        height: 600px;
+    }
 
     #container-divisao h1{
         font-weight: 900;
@@ -1229,7 +1241,9 @@ hr{
         display: none;
     }
 
-    
+    .img-carousel{
+        height: 500px;
+    }
 
     #escrito{
         display: none;
@@ -1352,6 +1366,10 @@ hr{
 @media (max-width: 450px) {
     #container-companhias{
         height: 900px;
+    }
+
+    .img-carousel{
+        height: 450px;
     }
 
     .imagem-cmt{
